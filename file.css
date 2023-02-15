@@ -148,6 +148,7 @@ span{
     padding: 14px 78px;
     font-size: 16px;
     letter-spacing: 2px;
+    cursor: pointer;
     font-weight: 500;
     text-decoration: none;
     transition: 0.9s ease-out;
@@ -156,6 +157,7 @@ span{
 .secondary__btn:hover {
     background-color: var(--btn-hover);
     border: none;
+    cursor: pointer;
     color: var(--white);
     box-shadow: 0 7px 20px #79687642 !important;
     transform: scaleY(0.5s);
@@ -188,9 +190,8 @@ i:hover {
 
 
 .about-section{
-    
     background-color: var(--primary);
-    height: 120vh;
+    height: 130vh;
 
 }
 
@@ -264,10 +265,11 @@ i:hover {
     grid-template-rows: repeat(7, 5vw);
     grid-gap: 1.6rem;
     padding: 100px 190px 80px;
-    color: white;
+    color: var(--white);
 }
 
 .gallery__img {
+    border-radius: 4px;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -277,6 +279,9 @@ i:hover {
 
 }
 
+figcaption{
+    margin-top: 1rem;
+}
 
 .gallery__item--1 {
     grid-row: 1 / span 3;
@@ -315,7 +320,23 @@ i:hover {
 
 .p-heading {
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 12rem;
+    color: var(--white);
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-color: var(--secondary);
+    text-underline-offset: 14px; 
+
+}
+
+.project-s{
+    background-color: var(--primary);
+    height: 120vh;
+}
+
+.other-project{
+    text-align: center;
+    padding-top: 5rem;
     color: var(--white);
     font-size: 40px;
     text-decoration: underline;
@@ -390,13 +411,14 @@ td {
     text-decoration: none;
 }
 
+
 #t-head a:hover{
     color: var(--hover);
 }
 
 
 #link{
-    margin: 0;
+   margin: 0;
    font-size: 20px;
    color: var(--secondary); 
 }
@@ -405,41 +427,24 @@ td {
     color: var(--hover);
 }
 
-.footer {
-    height: 20vh;
-    background-color: var(--primary);
-    text-align: center;
-
-}
-
-.footer-p {
-    display: inline-flex;
-    padding: 3rem;
-    font-size: 16px;
-    color: var(--grey);
-    letter-spacing: 1px;
-}
-
-.top {
-    display: inline-flex;
-    float: right;
-    font-size: 20px;
-    margin-right: 5rem;
-    margin-top: 4rem;
-    padding: 3px 8px;
-    cursor: pointer;
-
-}
-
-.top a {
-   text-decoration: none;
+.work-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
 }
 
 
 .s-contact {
     display: block;
-    height: 160vh;
+    height: 150vh;
     background-color: var(--primary);
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -458,20 +463,32 @@ td {
 }
 
 .contact-form {
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 
 #contact-h {
-    color: var(--white);
     text-align: center;
     padding-top: 12rem;
 }
 
 #contact-h h2{
+    color: var(--white);
     letter-spacing: 1px;
     font-size: 40px;
 }
+
+#contact-h i{
+      color: var(--secondary);
+}
+
+#contact-h p{
+    padding-top: 1rem;
+    color: var(--secondary);
+}
+
+
+
 
 
 .input-field {
@@ -489,8 +506,6 @@ td {
 }
 
 .input-field textarea {
-
-
     margin-bottom: 0;
 
 
@@ -512,16 +527,10 @@ textarea {
 
 }
 
-.wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 #f-heading {
     color: var(--white);
     text-align: center;
-    padding-top: 6rem;
+    padding-top: 5rem;
     font-weight: 400;
 }
 
@@ -540,16 +549,50 @@ textarea {
 
 } 
 
-.btn-active:hover {
+.btn-active:hover{
     background-color: var(--btn-hover);
-    color: var(--white);
     border: none;
-    border-radius: 4px;
+    cursor: pointer;
     color: var(--white);
-    box-shadow: 0 7px 20px rgba(145, 156, 212, 0.15) !important;
+    box-shadow: 0 7px 20px #79687642 !important;
     transform: scaleY(0.5s);
     transition-duration: 0.9s;
-} 
+
+
+}
+
+footer{
+  
+    height: 20vh;
+    background-color: var(--primary);
+    text-align: center;
+
+}
+
+.footer-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    padding-top: 3rem;
+
+}
+
+.footer-p{
+    color: var(--grey);
+}
+
+#icon{
+  float: right;
+  margin-right: 6.4%;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
 
 
 /* Media Queries */
