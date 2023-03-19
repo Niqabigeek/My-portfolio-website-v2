@@ -10,6 +10,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
 
     </head>
@@ -52,13 +55,11 @@
                     </li>
 
 
-                    <!-- <li>
-                                                                                                        <a href="" class="nav__links" target="_blank">Class/Workshop</a>
-                                                                                                    </li> -->
-
                     <li>
                         <a href="#contact" class="nav__links" target="_self">Contact Me</a>
                     </li>
+
+                   
 
                 </ul>
                 <!--unorder-list ends-->
@@ -94,12 +95,12 @@
 
                 <div id="section-content">
 
-                    <h1 class="headings">Designing User-Centered Websites<span>
-                            with Code and Creativity.</span>
+                    <h1 class="headings">Designing User-Centered Websites
+                            with Code and Creativity.
                     </h1>
 
                     <h3 class="sub__text">I work closely with my clients to understand their vision<span>
-                            and provide them with a website that truly represents
+                        and provide them with a website that truly represents
                         </span>their brand and attracts their target audience.
                     </h3>
                 </div>
@@ -168,8 +169,8 @@
 
 
                 <p class="about-paragraph">
-                    Welcome to my digital home! My name is Zeniat and I enjoy building things that lives on the internet. I have a strong background in front-end development and User-Centered design,
-                                                                                                                                           and I am passionate about building innovative digital experiences.
+                    Welcome to my digital home! My name is Zeniat and I enjoy building amazing digital experiences. I have a strong background in front-end development and User-Centered design,
+                    I provide digital solutions with a customer first approach.
 
                 </p>
 
@@ -203,7 +204,7 @@
                     <div class="skills2">
                         <li>Tailwind CSS</li>
                         <li>BootStrap5</li>
-                        <li>React</li>
+                        <li>ReactJS</li>
                         <li>Figma</li>
 
                     </div>
@@ -229,20 +230,22 @@
                 <div class="gallery">
 
                     <figure class="gallery__item gallery__item--1">
-                        <img src="img/Khayr.co (1).png" alt="Gallery image 1" class="gallery__img">
+                        <a href="https://niqabigeek.github.io/Islamic-Quotes-generator/" alt="Islamic Quotes Generator">
+                            <img src="img/Khayr.co Web App (2).png" alt="Gallery image 1" class="gallery__img">
 
+                        </a>
                         <figcaption>
                             <p>Khayr.co</p>
-                            <p>Islamic quotes generator</p>
+                            <p id="figcaption-p">Islamic quotes generator</p>
                         </figcaption>
                     </figure>
 
                     <figure class="gallery__item gallery__item--2">
-                        <img src="img/pexels-monoar-rahman-109371.jpg" alt="Gallery image 2" class="gallery__img">
+                        <img src="img/Group 6 (1).png" alt="Gallery image 2" class="gallery__img">
 
                         <figcaption>
                             <p>MuslimRide</p>
-                            <p>A rideshare web App for Muslims</p>
+                            <p id="figcaption-p">A ride booking web App for Muslim women</p>
                         </figcaption>
 
                     </figure>
@@ -251,8 +254,8 @@
                         <img src="img/Landing page (2).png" alt="Gallery image 3" class="gallery__img">
 
                         <figcaption>
-                            <p>Debtfinder</p>
-                            <p>School debt management software</p>
+                            <p>Debt Finder</p>
+                            <p id="figcaption-p">Student debt management software for school owners</p>
                         </figcaption>
 
                     </figure>
@@ -262,7 +265,7 @@
 
                         <figcaption>
                             <p>Local Farm Market</p>
-                            <p>Landing page</p>
+                            <p id="figcaption-p">Landing page</p>
                         </figcaption>
 
                     </figure>
@@ -272,25 +275,23 @@
 
                         <figcaption>
                             <p>SisterFreelance</p>
-                            <p>A platform that connects Muslim women freelancers with clients</p>
+                            <p id="figcaption-p">A platform that connects Muslim women freelancers with clients</p>
                         </figcaption>
 
                     </figure>
 
                     <figure class="gallery__item gallery__item--6">
-                        <img src="img/portfolio1.png" alt="Gallery image 6" class="gallery__img">
+                        <img src="img/beauty-app-1024x768.png" alt="Gallery image 6" class="gallery__img">
 
                         <figcaption>
                             <p>My Box Of Good Deeds</p>
-                            <p>Portfolio website V2</p>
+                            <p id="figcaption-p">web app where kids can save track their spending</p>
                         </figcaption>
 
                     </figure>
 
 
                 </div>
-
-                
 
 
             </div>
@@ -303,7 +304,7 @@
 
             <h2 class="p-heading">Some Things I've Built lately</h2>
             <p class="archive">
-                <a href="">Archives</a>
+                <a href="">Archived</a>
             </p>
 
 
@@ -319,32 +320,33 @@
                             <a href="">💰 Zakat Calculator</a>
                         </th>
                         <th id="t-head">
-                            <a href="">Password Generator 🔑</a>
+                            <a href="https://github.com/Niqabigeek/Password-generator">Password Generator 🔑</a>
                         </th>
 
                     </tr>
 
                     <tr>
                         <td>I built an app that helps Muslim users calculate their Zakat, which is a certain percentage of one's wealth to charity.
-                            <!-- <span></span>
-                                                                                                                                            <a href="">
-                                                                                                                                                <i class="fab fa-github" id="link"></i>
-                                                                                                                                            </a>
-                                                                                                                                            <a href="">
-                                                                                                                                                <i class="fa fa-external-link-alt" id="link"></i>
-                                                                                                                                            </a> -->
-
+                            <span>
+                                <a href="">
+                                    <i class="fab fa-github" id="link"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa fa-external-link-alt" id="link"></i>
+                                </a>
+                            </span>   
                         </td>
 
 
-                        <td>A password generator I created using JavaScript, this helps users create strong, random passwords in seconds.
-                            <!-- <span></span>
-                                                                                                                                            <a href="">
-                                                                                                                                                <i class="fab fa-github" id="link"></i>
-                                                                                                                                            </a>
-                                                                                                                                            <a href="">
-                                                                                                                                                <i class="fa fa-external-link-alt" id="link"></i>
-                                                                                                                                            </a> -->
+                        <td>A password generator that helps users create strong, random passwords in seconds. Built with JavaScript, CSS & HTML
+                            <span>
+                                <a href="">
+                                    <i class="fab fa-github" id="link"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa fa-external-link-alt" id="link"></i>
+                                </a>
+                            </span>                                                                                                                                                                            
 
                         </td>
 
@@ -357,7 +359,7 @@
                             <a href="">🏆 Tribute Web Page</a>
                         </th>
                         <th id="t-head">
-                            <a href="">Islamic quotes generator 📿
+                            <a href="https://github.com/Niqabigeek/Islamic-Quotes-generator">Islamic quotes generator 📿
 
 
                             </a>
@@ -369,25 +371,26 @@
                     <tr>
 
                         <td>A tribute webpage I made for Nelson Mandela. I developed this using basic HTML5 & CSS3 for frontend practise.
-                            <!-- <span></span>
-                                                                                                                                            <a href="">
-                                                                                                                                                <i class="fab fa-github" id="link"></i>
-                                                                                                                                            </a>
-                                                                                                                                            <a href="">
-                                                                                                                                                <i class="fa fa-external-link-alt" id="link"></i>
-                                                                                                                                            </a> -->
-
+                            <span>
+                                <a href="">
+                                    <i class="fab fa-github" id="link"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa fa-external-link-alt" id="link"></i>
+                                </a>
+                            </span>   
                         </td>
 
 
                         <td>I created this app to provide inspiration and motivation to users, and help them connect with the teachings of Islam.
-                            <!-- <span></span>
-                                                                                                                                            <a href="">
-                                                                                                                                                <i class="fab fa-github" id="link"></i>
-                                                                                                                                            </a>
-                                                                                                                                            <a href="">
-                                                                                                                                                <i class="fa fa-external-link-alt" id="link"></i>
-                                                                                                                                            </a> -->
+                            <span>
+                                <a href="https://github.com/Niqabigeek/Islamic-Quotes-generator">
+                                    <i class="fab fa-github" id="link"></i>
+                                </a>
+                                <a href="https://niqabigeek.github.io/Islamic-Quotes-generator/">
+                                    <i class="fa fa-external-link-alt" id="link"></i>
+                                </a>
+                            </span>   
 
 
                         </td>
@@ -398,14 +401,9 @@
                 <!--table content end-->
 
 
-
             </div>
 
-            <!-- <div class="work-btn">
-                <button class="secondary__btn">My Resume</button>
-
-            </div> -->
-
+        
 
 
         </section>
@@ -473,7 +471,7 @@
 
                     <tr>
 
-                        <td>A community for tech-savvy Muslim women interested in learning, discussing coding and technology.
+                        <td>A online community for tech-savvy Muslim women interested in learning, discussing coding and technology.
                             <a href="">
                                 <i class="fa fa-external-link-alt" id="link"></i>
                             </a>
@@ -481,7 +479,7 @@
                         </td>
 
 
-                        <td>An online course program designed to teach digital skills such as coding and graphic design to teenagers.
+                        <td>A physical/virtual program designed to teach digital skills such as coding and graphic design to teenagers.
                             <a href="">
                                 <i class="fa fa-external-link-alt" id="link"></i>
                             </a>
@@ -522,35 +520,37 @@
 
                         <div class="child-container">
 
-                            <h2 id="f-heading">Keep In touch or Say Hello👋</h2>
+                            <p id="f-heading">Get In touch for new project <span class="span"> or Say Hello👋
+                     
 
 
-                            <form class="contact-form" action="" method="POST">
+                                <form class="contact-form" action="" method="POST">
 
 
-                                <div class="input-field">
-                                    <input type="text" required placeholder="Your Name" id="input-field">
-                                </div>
+                                    <div class="input-field">
+                                        <input type="text" required placeholder="Your Name" id="input-field">
+                                    </div>
 
-                                <div class="input-field">
-                                    <input type="email" placeholder="Your Email" id="input-field" required>
-                                </div>
+                                    <div class="input-field">
+                                        <input type="email" placeholder="Your Email" id="input-field" required>
+                                    </div>
 
-
-                                <div class="input-field">
-                                    <textarea name="message" placeholder="Your Message..." id="message" cols="50" rows="2" placeholder="Enter Your Message" name="message" class="input-field" required></textarea>
-                                </div>
-
-                                <div class="input-field">
-
-                                    <button type="submit" value="submit" class="btn-active" id="submit-btn">SEND MESSAGE!</button>
-
-                                </div>
+                                    <div class="input-field">
+                                        <input type="number" placeholder="Your Phone Number" id="input-field" required>
+                                    </div>
 
 
-                            </form>
+                                    <div class="input-field">
+                                        <textarea name="message" placeholder="Your Message..." id="message" cols="50" rows="2" placeholder="Enter Your Message" name="message" class="input-field" required></textarea>
+                                    </div>
 
+                                    <div class="input-field">
 
+                                        <button type="submit" value="submit" class="btn-active" id="submit-btn">SEND MESSAGE!</button>
+
+                                    </div>
+                                </form>
+                            </p>
                         </div>
 
 
@@ -565,21 +565,23 @@
 
         <!--portfolio footer begins here-->
         <footer>
-            <div class="footer-wrapper"> 
+            <div class="footer-wrapper">
                 <div class="footer-p">
-                    <p><small>©Copyrights 2022. Designed and Built by NiqabiGeek</small>
-    
+                    <p>
+                        <small>©Copyrights 2022. Designed and Built by NiqabiGeek</small>
+
                     </p>
                 </div>
-    
-    
+
+
             </div>
 
             <div id="icon" class="animate__animated animate__bounce animate__repeat-3">
-                <a href="#" title="top" ><i class="fas fa-long-arrow-alt-up"></i>
+                <a href="#" title="top">
+                    <i class="fas fa-long-arrow-alt-up"></i>
                 </a>
             </div>
-           
+
 
         </footer>
         <!--portfolio footer end-->
